@@ -1,0 +1,461 @@
+/* ========================================
+   Checkout Page Styles
+   ======================================== */
+
+/* Nav override for checkout */
+.checkout-nav {
+    position: relative;
+    background: var(--color-bg-darker);
+    border-bottom: 1px solid var(--color-glass-border);
+}
+
+.secure-badge {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--color-gold);
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+/* Checkout Layout */
+.checkout-section {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    min-height: 100vh;
+}
+
+body {
+    padding-bottom: 95px;
+}
+
+.checkout-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+/* Card styling */
+.checkout-card {
+    margin-bottom: 1.5rem;
+}
+
+.checkout-heading {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: var(--color-white);
+}
+
+/* Order Summary */
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.order-item-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+}
+
+.order-thumb {
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.order-item-title {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: 0.25rem;
+}
+
+.order-item-desc {
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.order-item-price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.25rem;
+}
+
+.price-old {
+    text-decoration: line-through;
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+}
+
+.price-new {
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: var(--font-heading);
+}
+
+.order-divider {
+    height: 1px;
+    background: var(--color-glass-border);
+    margin: 1.25rem 0;
+}
+
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: var(--font-heading);
+}
+
+.price-total {
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.savings-tag {
+    margin-top: 1rem;
+    background: rgba(212, 175, 55, 0.1);
+    border: 1px solid var(--color-gold-dark);
+    border-radius: 6px;
+    padding: 0.6rem 1rem;
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-gold);
+}
+
+/* Checkout Checklist */
+.checkout-checklist li {
+    font-size: 1.05rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Testimonials */
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    border-radius: 10px;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    font-style: italic;
+    color: #ddd;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.testimonial-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--color-gold-dark), var(--color-gold));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-family: var(--font-heading);
+    color: #000;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+}
+
+.testimonial-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--color-white);
+}
+
+.testimonial-role {
+    font-size: 0.8rem;
+}
+
+/* FAQ */
+.faq-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    margin-bottom: 0;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: none;
+    border: none;
+    color: var(--color-white);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem 0;
+    cursor: pointer;
+    text-align: left;
+    transition: color 0.2s;
+}
+
+.faq-question:hover {
+    color: var(--color-gold);
+}
+
+.faq-icon {
+    font-size: 1.4rem;
+    color: var(--color-gold);
+    transition: transform 0.3s;
+    flex-shrink: 0;
+    margin-left: 1rem;
+}
+
+.faq-item.open .faq-icon {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.open .faq-answer {
+    max-height: 200px;
+    padding-bottom: 1rem;
+}
+
+.faq-answer p {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Payment Form */
+.payment-card {
+    border: 2px solid var(--color-gold);
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.15);
+}
+
+.sticky-payment {
+    position: sticky;
+    top: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--color-white);
+    margin-bottom: 0.4rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    color: var(--color-white);
+    transition: border-color 0.3s;
+}
+
+.form-group input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--color-gold);
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+}
+
+/* Price Summary */
+.price-summary {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.price-row-total {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 0.5rem;
+    padding-top: 0.75rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: var(--font-heading);
+}
+
+/* Pay button */
+#pay-btn {
+    width: 100%;
+    max-width: 100%;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+/* Trust Strip */
+.trust-strip {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+}
+
+.trust-icon {
+    font-size: 1rem;
+}
+
+.payment-methods {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.payment-support-image {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.04);
+    padding: 0.35rem;
+}
+
+/* Guarantee */
+.guarantee-card {
+    text-align: center;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+}
+
+.guarantee-icon {
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+}
+
+.guarantee-title {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-gold);
+    margin-bottom: 0.5rem;
+}
+
+.guarantee-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Urgency */
+.urgency-card {
+    border: 1px solid rgba(212, 175, 55, 0.5);
+    background: rgba(212, 175, 55, 0.05);
+}
+
+.urgency-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Footer override */
+.checkout-footer {
+    padding: 2rem 0;
+    border-top: 1px solid var(--color-glass-border);
+}
+
+/* Blink dot animation */
+.blink-dot {
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .checkout-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sticky-payment {
+        position: static;
+    }
+
+    .order-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .order-item-price {
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .checkout-heading {
+        font-size: 1.25rem;
+    }
+
+    .price-total {
+        font-size: 1.4rem;
+    }
+
+    #pay-btn {
+        font-size: 1.1rem;
+        padding: 1.2rem 1.5rem;
+    }
+
+    .trust-strip {
+        gap: 0.75rem;
+    }
+}

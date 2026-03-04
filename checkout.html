@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - TrillionX AI Business Operating System Blueprint</title>
+    <meta name="description"
+        content="Complete your purchase of the AI Franchise System Blueprint for Coaching Institutes.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar checkout-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/tx-logo.jpeg" alt="TrillionX Logo">
+            </a>
+            <div class="secure-badge">🔒 Secure Checkout</div>
+        </div>
+    </nav>
+
+    <!-- Checkout Section -->
+    <section class="section checkout-section">
+        <div class="container">
+            <div class="checkout-layout">
+
+                <!-- Left Column: Order Summary & Trust -->
+                <div class="checkout-left">
+
+                    <!-- Order Summary -->
+                    <div class="glass-card checkout-card">
+                        <h2 class="checkout-heading">Order Summary</h2>
+                        <div class="order-item">
+                            <div class="order-item-info">
+                                <img src="assets/blueprint.png" alt="AI Franchise System Blueprint"
+                                    class="order-thumb">
+                                <div>
+                                    <h3 class="order-item-title">AI Franchise System Blueprint</h3>
+                                    <p class="order-item-desc text-muted">Complete AI architecture + automation
+                                        frameworks + implementation roadmap</p>
+                                </div>
+                            </div>
+                            <div class="order-item-price">
+                                <span class="price-old">₹24,999</span>
+                                <span class="price-new text-gold">₹4,999</span>
+                            </div>
+                        </div>
+                        <div class="order-divider"></div>
+                        <div class="order-total">
+                            <span>Total</span>
+                            <span class="text-gold price-total">₹4,999</span>
+                        </div>
+                        <div class="savings-tag">
+                            <span>🎉 You save ₹20,000 (80% OFF)</span>
+                        </div>
+                    </div>
+
+                    <!-- What You Get -->
+                    <div class="glass-card checkout-card">
+                        <h2 class="checkout-heading">What You Get Instantly</h2>
+                        <ul class="check-list checkout-checklist">
+                            <li><span>✔</span> AI architecture for modern coaching businesses</li>
+                            <li><span>✔</span> Automation frameworks for every department</li>
+                            <li><span>✔</span> Tools and workflows used by AI-first companies</li>
+                            <li><span>✔</span> Step-by-step implementation roadmap</li>
+                            <li><span>✔</span> Lifetime access — no recurring fees</li>
+                            <li><span>✔</span> Future updates included free</li>
+                        </ul>
+                    </div>
+
+                    <!-- Trust Signals -->
+                    <div class="glass-card checkout-card">
+                        <h2 class="checkout-heading">Why 500+ Institutes Trust Us</h2>
+
+                        <!-- Testimonials -->
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"We implemented the AI Lead system from the blueprint and saw a
+                                40% increase in qualified inquiries within the first month."</p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">RK</div>
+                                <div>
+                                    <p class="testimonial-name">Rajesh Kumar</p>
+                                    <p class="testimonial-role text-muted">Founder, Excel Coaching Academy</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"The automation frameworks alone saved us 20+ hours per week.
+                                Our counselors now focus only on high-intent leads."</p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">PS</div>
+                                <div>
+                                    <p class="testimonial-name">Priya Sharma</p>
+                                    <p class="testimonial-role text-muted">Director, BrightFuture IAS Institute</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"We went from 1 center to 3 in 8 months using the franchise
+                                scaling playbook. The systems just work."</p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">AM</div>
+                                <div>
+                                    <p class="testimonial-name">Amit Mehta</p>
+                                    <p class="testimonial-role text-muted">CEO, Pinnacle Learning Group</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ -->
+                    <div class="glass-card checkout-card">
+                        <h2 class="checkout-heading">Frequently Asked Questions</h2>
+
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFaq(this)">
+                                <span>Is this a one-time payment?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes! You pay once and get lifetime access. No subscriptions, no hidden fees.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFaq(this)">
+                                <span>When will I receive the blueprint?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Immediately after payment. You'll receive a download link via email and on the
+                                    confirmation page.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFaq(this)">
+                                <span>Do I need technical skills to implement this?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>No. The blueprint is designed for business owners, not developers. Every framework
+                                    includes step-by-step instructions with recommended tools.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFaq(this)">
+                                <span>Will this work for my institute size?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes. Whether you have 1 center or 10, the systems are designed to scale. The
+                                    blueprint covers everything from single-location optimization to multi-branch
+                                    franchise operations.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFaq(this)">
+                                <span>Is my payment secure?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Absolutely. We use Razorpay, India's most trusted payment gateway, with 256-bit SSL
+                                    encryption. Your payment details are never stored on our servers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Payment -->
+                <div class="checkout-right">
+                    <div class="glass-card checkout-card payment-card sticky-payment">
+                        <h2 class="checkout-heading">Complete Your Purchase</h2>
+
+                        <form id="checkout-form" onsubmit="return false;">
+                            <div class="form-group">
+                                <label for="customer-name">Full Name *</label>
+                                <input type="text" id="customer-name" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="customer-email">Email Address *</label>
+                                <input type="email" id="customer-email"
+                                    placeholder="Enter your email (for blueprint delivery)" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="customer-phone">Phone Number *</label>
+                                <input type="tel" id="customer-phone" placeholder="Enter your phone number" required>
+                            </div>
+
+                            <div class="price-summary">
+                                <div class="price-row">
+                                    <span>Blueprint Price</span>
+                                    <span class="line-through text-muted">₹24,999</span>
+                                </div>
+                                <div class="price-row">
+                                    <span>Launch Discount (80%)</span>
+                                    <span class="text-gold">-₹20,000</span>
+                                </div>
+                                <div class="price-row price-row-total">
+                                    <span>You Pay</span>
+                                    <span class="text-gold">₹4,999</span>
+                                </div>
+                            </div>
+
+                            <button type="button" id="pay-btn" class="btn btn-primary btn-massive pulse-glow"
+                                onclick="initiatePayment()">
+                                🚀 Pay ₹4,999 & Get Access
+                            </button>
+                        </form>
+
+                        <div class="trust-strip">
+                            <div class="trust-item">
+                                <span class="trust-icon">🔒</span>
+                                <span>256-bit SSL</span>
+                            </div>
+                            <div class="trust-item">
+                                <span class="trust-icon">⚡</span>
+                                <span>Instant Access</span>
+                            </div>
+                            <div class="trust-item">
+                                <span class="trust-icon">💳</span>
+                                <span>Secure Payment</span>
+                            </div>
+                        </div>
+
+                        <div class="payment-methods">
+                            <img src="assets/razorpaySecure.png" alt="Razorpay secure payment methods"
+                                class="payment-support-image">
+                        </div>
+                    </div>
+
+                    <!-- Guarantee Card -->
+                    <div class="glass-card checkout-card guarantee-card">
+                        <div class="guarantee-icon">🛡️</div>
+                        <h3 class="guarantee-title">100% Value Guarantee</h3>
+                        <p class="guarantee-text text-muted">If you don't find actionable value in the blueprint,
+                            reach out to us and we'll work with you until you do. Your success is our priority.</p>
+                    </div>
+
+                    <!-- Urgency -->
+                    <div class="glass-card checkout-card urgency-card">
+                        <p class="urgency-text"><span class="text-gold blink-dot">●</span> <strong>Launch
+                                Price</strong> — This ₹4,999 offer won't last forever. The price will increase to
+                            ₹24,999 soon.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer checkout-footer">
+        <div class="container text-center">
+            <img src="assets/tx-logo.jpeg" alt="TrillionX Logo" class="footer-logo mb-3">
+            <p>&copy; 2026 TrillionX. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Sticky Timer Bar -->
+    <div class="sticky-timer-bar">
+        <div class="container timer-container">
+            <div class="timer-text">
+                <span class="text-gold blink-dot">●</span> Limited Offer Ending In:
+            </div>
+            <div class="timer-clock">
+                <div class="timer-block">
+                    <span class="num text-white" id="timer-hr">00</span>
+                    <span class="label">hr</span>
+                </div>
+                <div class="timer-block">
+                    <span class="num text-gold" id="timer-min">11</span>
+                    <span class="label">mins</span>
+                </div>
+                <div class="timer-block">
+                    <span class="num text-gold" id="timer-sec">00</span>
+                    <span class="label">secs</span>
+                </div>
+            </div>
+            <a href="#checkout-form" class="btn btn-primary timer-btn pulse-glow">Pay Now</a>
+        </div>
+    </div>
+
+    <!-- Razorpay SDK -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+    <script>
+        // FAQ toggle
+        function toggleFaq(btn) {
+            const item = btn.parentElement;
+            const isOpen = item.classList.contains('open');
+            // Close all
+            document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('open'));
+            if (!isOpen) {
+                item.classList.add('open');
+            }
+        }
+
+        // Countdown Timer Logic
+        const hrDisplay = document.getElementById('timer-hr');
+        const minDisplay = document.getElementById('timer-min');
+        const secDisplay = document.getElementById('timer-sec');
+
+        if (hrDisplay && minDisplay && secDisplay) {
+            let totalTime = 11 * 60;
+
+            const updateTimer = () => {
+                if (totalTime <= 0) {
+                    clearInterval(timerInterval);
+                    hrDisplay.textContent = '00';
+                    minDisplay.textContent = '00';
+                    secDisplay.textContent = '00';
+                    return;
+                }
+
+                const hrs = Math.floor(totalTime / 3600);
+                const remainingSecs = totalTime % 3600;
+                const mins = Math.floor(remainingSecs / 60);
+                const secs = remainingSecs % 60;
+
+                hrDisplay.textContent = hrs.toString().padStart(2, '0');
+                minDisplay.textContent = mins.toString().padStart(2, '0');
+                secDisplay.textContent = secs.toString().padStart(2, '0');
+
+                totalTime--;
+            };
+
+            updateTimer();
+            const timerInterval = setInterval(updateTimer, 1000);
+        }
+
+        // Razorpay Payment
+        function initiatePayment() {
+            const name = document.getElementById('customer-name').value.trim();
+            const email = document.getElementById('customer-email').value.trim();
+            const phone = document.getElementById('customer-phone').value.trim();
+
+            // Basic validation
+            if (!name || !email || !phone) {
+                alert('Please fill in all fields to continue.');
+                return;
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+
+            const phoneRegex = /^[6-9]\d{9}$/;
+            if (!phoneRegex.test(phone)) {
+                alert('Please enter a valid 10-digit Indian phone number.');
+                return;
+            }
+
+            const options = {
+                key: 'YOUR_RAZORPAY_KEY_ID', // Replace with your Razorpay Key ID
+                amount: 499900, // Amount in paise (₹4,999 = 499900 paise)
+                currency: 'INR',
+                name: 'TrillionX',
+                description: 'AI Franchise System Blueprint',
+                image: 'assets/tx-logo.jpeg',
+                handler: function (response) {
+                    // Payment successful
+                    window.location.href = 'success.html?payment_id=' + encodeURIComponent(response.razorpay_payment_id);
+                },
+                prefill: {
+                    name: name,
+                    email: email,
+                    contact: phone
+                },
+                notes: {
+                    product: 'AI Franchise System Blueprint'
+                },
+                theme: {
+                    color: '#d4af37'
+                },
+                modal: {
+                    ondismiss: function () {
+                        // User closed the payment modal
+                    }
+                }
+            };
+
+            const rzp = new Razorpay(options);
+            rzp.on('payment.failed', function (response) {
+                alert('Payment failed. Please try again or use a different payment method.');
+            });
+            rzp.open();
+        }
+    </script>
+
+</body>
+
+</html>
